@@ -30,32 +30,15 @@ In directory that contains your project (example project in this [repo](https://
 
 ### Start using
 
-In src folder of your project create file server.js. There you import `createServer` from `miragejs` and start creates your routes:
+In src folder of your project create file server.js. 
 
-```
-export default function createMirageServer() {
-  createServer({
-    routes() {
+![server.js in project](https://github.com/Svetzayats/articles/blob/main/miragejs/images/structure.png?raw=true)
 
-      // this request will be handled by mirage server
-      this.get('/data', () => {
-        return {
-          name: 'Awesome data',
-          list: [
-            { id: 1, value: 'First point' },
-            { id: 2, value: 'Second point' },
-            { id: 3, value: 'Third point' },
-          ]
-        };
-      });
+There you import `createServer` from `miragejs` and start creates your routes:
 
-      // if you want other request (for example, starts with /api) don't be handled mirage
-      this.namespace = 'api';
-      this.passthrough();
-    },
-  });
-}
-```
+
+![server.js code example](https://github.com/Svetzayats/articles/blob/main/miragejs/images/code1.png?raw=true)
+
 
 For example, here I create answer for GET request to '/data'.
 
@@ -63,11 +46,9 @@ Please note this `this.passthrough()` - it allows other requests pass through, t
 
 And in my App.js I just import my new function and run it:
 
-```
-import createMirageServer from './server';
 
-createMirageServer();
-```
+![using code example](https://github.com/Svetzayats/articles/blob/main/miragejs/images/code2.png?raw=true)
+
 
 You can see all code for this example in [app-example repo](https://github.com/Svetzayats/articles/tree/main/miragejs/app-example).
 
