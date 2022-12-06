@@ -24,7 +24,8 @@ I use create-react-app, because I on my work we have CRA app ;) If you don't hav
 
 ### Setup
 
-In directory that contains your project (example project in this repo) run this command - it adds MirageJS in your dev dependencies and you can start using it.
+In directory that contains your project (example project in this [repo](https://github.com/Svetzayats/articles/tree/main/miragejs/app-example)) run this command - it adds MirageJS in your dev dependencies and you can start using it.
+
 `npm install --save-dev miragejs`
 
 ### Start using
@@ -68,12 +69,14 @@ import createMirageServer from './server';
 createMirageServer();
 ```
 
-You can see all code for this example in [app-example repo]().
+You can see all code for this example in [app-example repo](https://github.com/Svetzayats/articles/tree/main/miragejs/app-example).
 
 MirageJS also logs all requests in console - so it's pretty easy to find out what's going on.
 
 ## Useful links
 
 [MirageJS documentation](https://miragejs.com/docs/getting-started/introduction/)
+
 [CRA documentation](https://create-react-app.dev/docs/getting-started)
+
 [ChatGPC](https://chat.openai.com/) - here you can ask questions and AI answers. You can ask something about MirageJS and ChatGPC answer with examples of code. Or it can write some code for you, if you make your request clear :)
