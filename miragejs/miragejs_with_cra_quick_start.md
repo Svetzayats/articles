@@ -34,7 +34,7 @@ In src folder of your project create file server.js.
 
 ![server.js in project](https://github.com/Svetzayats/articles/blob/main/miragejs/images/structure.png?raw=true)
 
-There you import `createServer` from `miragejs` and start creates your routes:
+There you import `createServer` from `miragejs` and start creating your routes:
 
 
 ![server.js code example](https://github.com/Svetzayats/articles/blob/main/miragejs/images/code1.png?raw=true)
