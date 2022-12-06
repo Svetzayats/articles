@@ -1,4 +1,4 @@
-# MirageJS with cra - easy start
+# MirageJS with CRA - easy start
 
 ## Why and for what?
 
