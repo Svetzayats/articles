@@ -1,0 +1,19 @@
+.App {
+  padding: 1rem;
+  color: navy;
+}
+
+header {
+  font-size: larger;
+  background-image: linear-gradient(to right, #553c9a 45%, #ee4b2b);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+button {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+
