@@ -20,7 +20,7 @@ If you want mock or imitate some answers from backend in you app, MirageJS is wh
 
 ## How to use?
 
-I use create-react-app, because I on my work we have CRA app ;) If you don't have one for experiment, you can create new one with `npx create-react-app my-app` ([CRA documentation](https://create-react-app.dev/docs/getting-started)).
+I use create-react-app, because on my work project we have CRA app ;) If you don't have one for experiment, you can create new one with `npx create-react-app my-app` ([CRA documentation](https://create-react-app.dev/docs/getting-started)).
 
 ### Setup
 
@@ -30,29 +30,30 @@ In directory that contains your project (example project in this [repo](https://
 
 ### Start using
 
-In src folder of your project create file server.js. 
+In src folder of your project create file server.js.
 
 ![server.js in project](https://github.com/Svetzayats/articles/blob/main/miragejs/images/structure.png?raw=true)
 
-There you import `createServer` from `miragejs` and start creating your routes:
-
+There you import `createServer` from `miragejs` and define your routes:
 
 ![server.js code example](https://github.com/Svetzayats/articles/blob/main/miragejs/images/code1.png?raw=true)
 
-
 For example, here I create answer for GET request to '/data'.
 
-Please note this `this.passthrough()` - it allows other requests pass through, they are handled by backend.
+Please note this `this.passthrough()` - it allows other requests pass through, they are handled by backend. Intersting thing here that order is important: if I move `this.namespace='api'` to top of the function, before `this.get('/data'...)` - it stops working. That's because:
+
+> Note that only routes defined after this.namespace are affected.
+> <sub>[MirageJS documentation for Server](https://miragejs.com/api/classes/server/)</sub>
 
 And in my App.js I just import my new function and run it:
 
-
 ![using code example](https://github.com/Svetzayats/articles/blob/main/miragejs/images/code2.png?raw=true)
 
-
-You can see all code for this example in [app-example repo](https://github.com/Svetzayats/articles/tree/main/miragejs/app-example).
+You can see all code for this example in [app-example repo](https://github.com/Svetzayats/articles/tree/main/miragejs/app-example). Another good point that MirageJS works in browser, so not only your local enviroment could work with this server. It works on test enviroments, for example, we launch deploy in Gitlab CI, and it works fine.
 
 MirageJS also logs all requests in console - so it's pretty easy to find out what's going on.
+
+As you can see, MirageJS makes it easy to define and start a mock server, and its declarative API allows you to quickly and easily configure the server to behave in the way that you need.
 
 ## Useful links
 
