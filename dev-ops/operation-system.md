@@ -6,6 +6,8 @@ An **Operating System (OS)** is a software that acts as an interface between com
 
 Major components of an OS are **file system, scheduler, and device driver**.
 
+**IPC** - interprocess communications.
+
 There are 3 key elements of an operating system, which are:
 
 - **Abstractions** (process, thread, file, socket, memory),
