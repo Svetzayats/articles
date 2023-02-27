@@ -5,3 +5,10 @@ Repo with my posts or abstracts on different topics
 - [React Context - organization and templates](https://github.com/Svetzayats/articles/blob/main/react-context/react-context.md)
 - [About OS - types, key concepts](https://github.com/Svetzayats/articles/blob/main/dev-ops/operation-system.md)
 
+### Testing 
+- [Cooking book - React, Jest](https://github.com/Svetzayats/articles/blob/main/testing-react/cooking-book.md) - some pieces of useful code for tests (mocking etc). 
+
+### Linux 
+- [Introduction to Linux - takeaways from LinkedIn course by Scott Simpson](https://github.com/Svetzayats/articles/blob/main/dev-ops/introduction-to-linux-by-scott-simpson.md)
+- [Linux overview and installation - takeaways from LinkedIn course by Grant McWilliams](https://github.com/Svetzayats/articles/blob/main/dev-ops/introduction-to-linux-by-scott-simpson.md) - good lessons with clear instructions how to create and run virtual machine and installing CentOs on it. 
+
