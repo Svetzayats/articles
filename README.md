@@ -2,8 +2,12 @@
 Repo with my posts or abstracts on different topics  
 
 - [MirageJS - quick start and example with CRA](https://github.com/Svetzayats/articles/blob/main/miragejs/miragejs_with_cra_quick_start.md) 
-- [React Context - organization and templates](https://github.com/Svetzayats/articles/blob/main/react-context/react-context.md)
+
 - [About OS - types, key concepts](https://github.com/Svetzayats/articles/blob/main/dev-ops/operation-system.md)
+
+### React 
+- [React Context - organization and templates](https://github.com/Svetzayats/articles/blob/main/react-context/react-context.md)
+- [createPortal - use cases, example and useful links](https://github.com/Svetzayats/articles/blob/main/react/create-portal.md)
 
 ### Testing 
 - [Cooking book - React, Jest](https://github.com/Svetzayats/articles/blob/main/testing-react/cooking-book.md) - some pieces of useful code for tests (mocking etc). 
